@@ -1,0 +1,244 @@
+/* General Reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+.app {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.navigation button:hover {
+  background-color: #0056b3;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1px;
+  background-color: #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.day-label {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.empty {
+  background-color: #f4f4f9;
+}
+
+.day {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ccc;
+  min-height: 100px;
+  cursor: pointer;
+  position: relative;
+}
+
+.day:hover {
+  background-color: #f0f0f0;
+}
+
+.today {
+  background-color: #ffeb3b;
+}
+
+.event {
+  margin-top: 10px;
+  background-color: #4caf50;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+footer a:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Overlay */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+/* Modal Content */
+.ReactModal__Content {
+  background-color: #ffffff;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  outline: none;
+}
+
+.ReactModal__Content h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.ReactModal__Content hr {
+  margin: 20px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+.ReactModal__Content input,
+.ReactModal__Content textarea,
+.ReactModal__Content select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.ReactModal__Content textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.ReactModal__Content input[type="time"] {
+  padding: 8px;
+}
+
+.ReactModal__Content button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.ReactModal__Content button:first-of-type {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.ReactModal__Content button:first-of-type:hover {
+  background-color: #0056b3;
+}
+
+.ReactModal__Content button:last-of-type {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.ReactModal__Content button:last-of-type:hover {
+  background-color: #a71d2a;
+}
+
+/* Search Filter */
+.ReactModal__Content input[type="text"] {
+  margin-bottom: 10px;
+}
+
+/* Event List */
+.event-list {
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e3f2fd;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.event strong {
+  font-size: 1rem;
+  color: #333;
+}
+
+.event p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.event button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.event button:hover {
+  background-color: #a71d2a;
+}
